@@ -61,8 +61,8 @@ wget "$iso_url" -O "$iso_path"
 umount /tmp/ventoy
 losetup -d "$loop_device"
 
-# Start a VM with QEMU using the .img file with 2GB of RAM, KVM acceleration, and CPU optimization
-qemu-system-x86_64 -enable-kvm -cpu host -m 2000 -drive format=raw,file="$img_path"
+# Start a VM with QEMU using the .img file with 4GB of RAM, KVM acceleration, and CPU optimization
+qemu-system-x86_64 -enable-kvm -cpu host -m 4000 -drive format=raw,file="$img_path"
 
 # After the QEMU VM is closed, delete residual files from /tmp
 rm -rf /tmp/*
