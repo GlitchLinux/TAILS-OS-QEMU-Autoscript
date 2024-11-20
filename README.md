@@ -1,4 +1,4 @@
-TAILS-OS-QEMU-Autoscript
+TAILS-OS-Virtual-Machine-Creator
 
 This Bash script automates the process of downloading, configuring, and running a bootable Ventoy image with Tails OS. It includes downloading Ventoy, formatting a virtual disk image, adding the Tails OS ISO, and running the setup in a QEMU virtual machine.
 
